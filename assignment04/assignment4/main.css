@@ -1,0 +1,272 @@
+*{
+	font-family: 'Pangolin';
+	text-decoration: none;
+	
+}
+
+.grid-container {
+	display: grid;
+    grid-template-columns: 14% auto ;
+    gap: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-container > div{
+    background-color: #ff0707;
+}
+
+#header{
+	grid-column: 1 / span 2;
+}
+
+#header-img{
+	width: 100%;
+	height: 100%;
+}
+
+.header-content{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#header-text1{
+	font-family: 'Palette Mosaic';
+	color: #fff;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw; /* ขนาดตัวอักษร ปรับตามขนาดหน้าจอ */
+    font-weight: bold;
+    text-transform: uppercase; /* ทำให้เป็นตัวพิมพ์ใหญ่หมด */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* เพิ่มเงาเพื่อให้เด่นชัดขึ้น */
+}
+
+#menu{
+	grid-column: 1 / span 2;
+	background-color: #a32215;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
+	border: 30px solid #a32215;
+}
+
+.inner-box {
+    background-color: #FFF9F3;
+    border: 3px solid #a32215;
+    text-align: center;
+	padding: 10px 40px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.inner-box:hover{
+	background-color: #FFF9F3;
+	transform: translateY(-2px);
+}
+
+#Ingredients{
+	grid-column: 1 / span 2;
+	display: grid;
+	grid-template-columns: 35% auto;
+	background-color: #FFF9F3;
+	border: 10px solid #a32215;
+	border-radius: 10px;
+	padding: 20px;
+	gap: 20px;
+	align-items: center;
+}
+
+#Ingredients-list{
+	color: #a32215;
+}
+
+#picpiz img{
+	width: 100%;
+    height: auto;
+    border-radius: 20px; 
+    object-fit: cover;
+}
+
+#Instructions h1{
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: #a32215;
+	
+}
+
+#Instructions{
+	grid-column: 1 / span 2;
+	display: block;
+	background-color: #fcf8f8;
+}
+
+#picpiz2 img{
+	width: 100%;
+	height: auto;
+	border-radius: 20px; 
+	object-fit: cover;
+}
+
+#BigInstructions{
+	display: grid;
+    gap: 30px;
+	grid-template-columns: 1fr;
+}
+
+#BigInstructions ul{
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#BigInstructions li{
+	margin-bottom: 8px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+#Instructions-list1{
+	display: grid;
+    grid-template-columns: 45% auto; /* แบ่งข้อความ 45% รูป 55% */
+    gap: 15px;
+}
+
+#babyinstructions1{
+	border: 3px solid #a32215;
+    border-radius: 20px;
+    padding: 20px;
+    color: #a32215;
+}
+
+#picpiz1 {
+	display: grid;
+    grid-template-columns: 1fr 1fr; /* แบ่งครึ่งใส่ 2 รูป */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#picpiz1 img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Instructions-list2{
+	display: flex;
+    flex-direction: column;
+}
+
+#babyinstructions2{
+	background-color: #b93721; 
+    color: white;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;;
+}
+
+#picpiz2 {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    border-radius: 0 0 20px 20px; 
+    overflow: hidden;
+}
+
+#picpiz2 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#Instructions-list3{
+	display: grid;
+    grid-template-columns: 45% auto;
+    gap: 20px;
+    align-items: center; 
+    margin-top: 10px;
+}
+
+#finalpic img{
+	width: 100%;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+#finaltext{
+	color: #a32215;
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+#source {
+    grid-column: 1 / span 2; 
+    background-color: #b93721; 
+    color: white; 
+    text-align: center; 
+    padding: 30px 20px; 
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 10px; 
+}
+
+#source a {
+    color: white;
+    text-decoration: underline; 
+}
+
+#source a:hover {
+    color: #ffd8d8; 
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+    
+    #header, #menu, #Ingredients, #Instructions, #source {
+        grid-column: 1 / -1; /* สั่งให้ทุกส่วนขยายเต็มพื้นที่ ไม่ต้องอิง 2 คอลัมน์เดิม */
+    }
+
+    #Ingredients {
+        grid-template-columns: 1fr;
+    }
+
+    #Instructions-list1, 
+    #Instructions-list3 {
+        grid-template-columns: 1fr;
+    }
+
+    #picpiz2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    #menu {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #picpiz1 {
+        grid-template-columns: 1fr;
+    }
+
+    #picpiz2 {
+        grid-template-columns: 1fr;
+    }
+
+    #Ingredients, #babyinstructions1, #babyinstructions2 {
+        padding: 15px;
+    }
+    
+    #Instructions h1 {
+        font-size: 1.5rem;
+    }
+}

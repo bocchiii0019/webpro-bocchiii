@@ -3,7 +3,7 @@
     color: #fffcfc;
 }
 
-.Register
+.Register,.Login
 {
     display: flex;
     justify-content: center;
@@ -30,7 +30,17 @@ fieldset {
     
 }
 
-#registerLegend {
+.fieldset2{
+    background-color: #4193b9;
+    background-image: linear-gradient(315deg, #4193b9 0%, #6dbaed 74%);
+    height: 250px;
+    border-radius: 50px;
+    filter: drop-shadow(0px 0px 10px #9dc5eb);
+    
+}
+
+
+#registerLegend,#loginLegend {
     font-size: 2rem;
     text-align: center;
 }
@@ -43,7 +53,7 @@ fieldset {
     margin: 0 50px;
 }
 
-#registerBtn {
+#registerBtn,#loginBtn {
     display: block;
     margin: 5px auto;
     margin-top: 1rem;
@@ -54,9 +64,14 @@ fieldset {
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    
 }
 
-#resetBtn {
+#registerBtn:hover,#loginBtn:hover {
+    transform: scale(1.1);
+}
+
+#resetBtn,#clearBtn {
     display: block;
     margin: 0 auto;
     padding: 0.5rem 1rem;
@@ -67,13 +82,17 @@ fieldset {
     cursor: pointer;
 }
 
+#resetBtn:hover,#clearBtn:hover {
+    transform: scale(1.1);
+}
+
 .radio{
     display: flex;
     justify-content: center;
     
 }
 
-.name,.lastname,.brithday,.email,.user,.pass,.retypapass,.radio{
+.name,.lastname,.brithday,.email,.user,.pass,.retypapass,.radio,.username,.password{
     display: flex;
     flex-direction: row;
     justify-content:left;
@@ -81,12 +100,16 @@ fieldset {
     margin-bottom: 0.5rem;
 }
 
-#firstname, #lastname,#email,#user,#pass,#retypepass{
+#firstname, #lastname,#email,#user,#pass,#retypepass,#password,#username{
     width: 60%;
     justify-content: right;
     border: 1px solid #ccc;
     border-radius: 30px;
     box-sizing: border-box;
+    color: #1c67ad;
+    padding-left: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
 }
 
 #birthday{

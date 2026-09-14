@@ -29,7 +29,7 @@ function validateForm(event) {
     if (genders[i].checked) {
         gender = genders[i].value;
     }
-}
+    }
 
 
     if (Firstname === "" || Lastname === "" || email === "" || username === "" || password === "" || retypePassword === "" || bday === "" || gender === "") {

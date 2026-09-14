@@ -229,7 +229,7 @@
     }
     
     #header, #menu, #Ingredients, #Instructions, #source {
-        grid-column: 1 / -1; /* สั่งให้ทุกส่วนขยายเต็มพื้นที่ ไม่ต้องอิง 2 คอลัมน์เดิม */
+        grid-column: 1 / -1; 
     }
 
     #Ingredients {

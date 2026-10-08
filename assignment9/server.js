@@ -13,8 +13,15 @@ const server = http.createServer(async (req, res) => {
 
 // complete the code here
 const readJsonFile = async () => {
+    try{
     const data = await fs.readFile('cloth1.json', 'utf8');
     return JSON.parse(data);
+    }
+    catch(err)
+    {
+        console.error("error reading JSON file: ",err);
+        throw err;
+    }
 };
 
 
@@ -22,9 +29,10 @@ const readJsonFile = async () => {
 // จำนวนเสื้อผ้าตามที่กำหนด
 const editJsonFile = (data) => {
     const n_stock = [12, 13, 50, 22, 55, 87, 12, 29, 10];
-    data.forEach((item, index) => {
-        item.stock = n_stock[index];
-    });
+    for (let i=0;i<data.length;i++)
+    {
+        data[i].stock = n_stock[i];
+    }
     return data;
 };
 

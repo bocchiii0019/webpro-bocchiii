@@ -1,0 +1,149 @@
+*{
+    font-family:'Dancing Script' ;
+}
+
+.main{
+    background-color: FFF7EB;
+    background-color: #BD4444;
+}
+
+.h1{
+    justify-content: flex-start;
+    background-color: #F1DEC4;
+    border-radius: 40px;
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    filter: drop-shadow(0 8px 10px #FF4242);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .h1:hover{
+    transform: translate(-4px);
+    
+} */
+
+.Name{
+    font-family: 'Dancing Script';
+    color: #BD4444;
+    margin-left: 120px;
+    margin-right: 100px;
+    border: #BD4444;
+}
+
+.BigN-baby{
+    font-size: 70px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.N-baby{
+    margin-top: 10px;
+}
+
+.Pic-Cinnamon{
+    width: 800pt;
+    border-radius: 40px;
+    background-image: url('./pic/cinnamon-5.jpeg');
+    padding: 0px;
+    background-size: cover;
+    background-position: center;
+    justify-content: end;
+}
+
+.Pic-babyCni{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.Num1{
+    width: 20%;
+    margin: 10px;
+    border-radius: 50px;
+    filter: drop-shadow(0 8px 20px #FF4242);
+}
+
+.R-Name{
+    font-size: 50px;
+    color: #F1DEC4;
+    text-align:center;
+    margin-top: 80px;
+    filter: drop-shadow(0 8px 20px #FF4242);
+}
+
+.info{
+    color: #F1DEC4;
+    display: flex;
+}
+
+.PicIng{
+    margin-left: 200px;
+    margin-right: 50px;
+}
+
+.In-need{
+    margin-right: 200px;
+    margin-top: 0px;
+}
+
+.need{
+    padding: 0px;
+    font-size: 20px;
+}
+
+#PI{
+    border-radius: 50px;
+    width: 500px;
+    filter: drop-shadow(0 8px 20px #FF4242);
+}
+
+.Ingredients{
+    font-size: 40px;
+    margin-bottom: 0%;
+    margin-top: 0px;
+}
+
+.Stepinfo{
+    display: flex;
+    margin-top: 50px;
+    color: #F1DEC4;
+}
+
+.babyPicstep{
+    width: 300px;
+    border-radius: 50px;
+    filter: drop-shadow(0 8px 20px #FF4242);
+    margin-left: 200px;
+}
+
+.info2{
+    margin-left: 50px ;
+    margin-right: 200px ;
+}
+
+.Step{
+    font-size: 40px;
+    margin-bottom: 0%;
+}
+
+.SnS{
+    padding: 0px;
+    font-size: 20px;
+}
+
+.s{
+    font-size: 500px;
+}

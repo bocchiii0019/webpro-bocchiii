@@ -6,7 +6,7 @@
 
 .grid-container {
 	display: grid;
-    grid-template-columns: 14% auto ;
+    grid-template-columns: 30% auto ;
     gap: 18px;
     max-width: 1200px;
     margin: 0 auto;
@@ -38,10 +38,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 7vw; /* ขนาดตัวอักษร ปรับตามขนาดหน้าจอ */
+    font-size: 7vw; 
     font-weight: bold;
-    text-transform: uppercase; /* ทำให้เป็นตัวพิมพ์ใหญ่หมด */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* เพิ่มเงาเพื่อให้เด่นชัดขึ้น */
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
 }
 
 #menu{
@@ -65,7 +65,6 @@
 }
 
 .inner-box:hover{
-	background-color: #FFF9F3;
 	transform: translateY(-2px);
 }
 
@@ -102,7 +101,6 @@
 
 #Instructions{
 	grid-column: 1 / span 2;
-	display: block;
 	background-color: #fcf8f8;
 }
 
@@ -146,7 +144,7 @@
 
 #picpiz1 {
 	display: grid;
-    grid-template-columns: 1fr 1fr; /* แบ่งครึ่งใส่ 2 รูป */
+    grid-template-columns: 50% 50%; 
     border-radius: 20px;
     overflow: hidden;
 }
@@ -171,7 +169,7 @@
 
 #picpiz2 {
 	display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: 25% 25% 25% 25%; 
     border-radius: 0 0 20px 20px; 
     overflow: hidden;
 }
@@ -229,7 +227,7 @@
     }
     
     #header, #menu, #Ingredients, #Instructions, #source {
-        grid-column: 1 / -1; 
+        grid-column: 1 / -1; /* สั่งให้ทุกส่วนขยายเต็มพื้นที่ ไม่ต้องอิง 2 คอลัมน์เดิม */
     }
 
     #Ingredients {
